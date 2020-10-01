@@ -3,7 +3,7 @@ library(RNifti)
 #Auditory Data
 
 Auditory_copes <- list()
-sub_ids <- c(sapply(c(1:120),function(x) ifelse(x<10,paste0("00",x), ifelse(x<100 & x>9,paste0(0,x), paste0(x)))), sapply(c(198:217), function(x)paste0(x)))
+sub_ids <- c(sapply(c(1:50),function(x) ifelse(x<10,paste0("00",x), ifelse(x<100 & x>9,paste0(0,x), paste0(x)))), sapply(c(198:217), function(x)paste0(x)))
 for (sid in 1:length(sub_ids)) {
   Auditory_copes[[sid]] <- RNifti::readNifti(paste0("data-raw/AuditoryData", "/sub-", sub_ids[sid] , ".nii.gz"))
 
