@@ -13,16 +13,14 @@ List of copes in NifTI format
  list()
 }
 \details{
-%%  ~~ If necessary, more details than the __description__ above ~~
+List of copes from FLAME 1 analysis computed by (FSL)[https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FEAT/UserGuide#Single-Group_Average_.28One-Sample_T-Test.29]
 }
 \source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
+https://openneuro.org/datasets/ds000107/versions/00001
 }
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
+
 \examples{
 data(WO_copes)
-## maybe str(WO_copes) ; plot(WO_copes) ...
+str(WO_copes)
 }
 \keyword{datasets}

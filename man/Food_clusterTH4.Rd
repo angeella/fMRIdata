@@ -15,17 +15,14 @@ Image in NIfTI format describing the cluster map computed by FSL considering a t
  - attr(*, "pixunits")= chr [1:2] "mm" "s"
  - attr(*, ".nifti_image_ptr")=<externalptr>
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
 \source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
+https://openneuro.org/datasets/ds000157/versions/00001
 }
-\references{
-%%  ~~ possibly secondary sources and usages ~~
+\details{
+The cluster map from Single-Group Average (One-Sample T-Test) computed by FSL using threshold equals 4.
 }
 \examples{
 data(Food_clusterTH4)
-## maybe str(Food_clusterTH4) ; plot(Food_clusterTH4) ...
+str(Food_clusterTH4)
 }
 \keyword{datasets}

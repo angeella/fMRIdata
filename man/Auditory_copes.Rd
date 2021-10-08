@@ -409,17 +409,14 @@ List of 140
   ..- attr(*, ".nifti_image_ptr")=<externalptr>
   [list output truncated]
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
 \source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
+https://openneuro.org/datasets/ds000158/versions/1.0.0
 }
-\references{
-%%  ~~ possibly secondary sources and usages ~~
+\details{
+List of copes from FLAME 1 analysis computed by (FSL)[https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FEAT/UserGuide#Single-Group_Average_.28One-Sample_T-Test.29]
 }
 \examples{
 data(Auditory_copes)
-## maybe str(Auditory_copes) ; plot(Auditory_copes) ...
+str(Auditory_copes)
 }
 \keyword{datasets}

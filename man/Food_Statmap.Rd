@@ -15,17 +15,14 @@ Statmap image in NifTI format
  - attr(*, "pixunits")= chr [1:2] "mm" "s"
  - attr(*, ".nifti_image_ptr")=<externalptr>
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
 \source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
+https://openneuro.org/datasets/ds000157/versions/00001
 }
-\references{
-%%  ~~ possibly secondary sources and usages ~~
+\details{
+Statistical parametric mapping computed by function \code{Statmap} from the \code{pARI} package.
 }
 \examples{
 data(Food_Statmap)
-## maybe str(Food_Statmap) ; plot(Food_Statmap) ...
+str(Food_Statmap)
 }
 \keyword{datasets}

@@ -16,16 +16,13 @@ mask image in NifTI format
  - attr(*, ".nifti_image_ptr")=<externalptr>
 }
 \details{
-%%  ~~ If necessary, more details than the __description__ above ~~
+The mask from Single-Group Average (One-Sample T-Test) computed by (FSL)[https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FEAT/UserGuide#Single-Group_Average_.28One-Sample_T-Test.29]
 }
 \source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
+https://openneuro.org/datasets/ds000157/versions/00001
 }
 \examples{
 data(Food_mask)
-## maybe str(Food_mask) ; plot(Food_mask) ...
+str(Food_mask)
 }
 \keyword{datasets}

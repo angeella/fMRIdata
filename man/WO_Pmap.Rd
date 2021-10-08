@@ -16,16 +16,13 @@ Pmap image in NifTI format
  - attr(*, ".nifti_image_ptr")=<externalptr>
 }
 \details{
-%%  ~~ If necessary, more details than the __description__ above ~~
+P-values map computed by function \code{Statmap} from the \code{pARI} package.
 }
 \source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
+https://openneuro.org/datasets/ds000107/versions/00001
 }
 \examples{
 data(WO_Pmap)
-## maybe str(WO_Pmap) ; plot(WO_Pmap) ...
+str(WO_Pmap)
 }
 \keyword{datasets}

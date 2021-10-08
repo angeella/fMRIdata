@@ -4,7 +4,7 @@
 #'
 #'
 #' @author
-#' Angela Andreella \email{angela.andreella@phd.unipd.it},
+#' Angela Andreella \email{angela.andreella@unipd.it},
 #'
 #' @docType package
 #' @name fMRIdata

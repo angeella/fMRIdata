@@ -15,7 +15,9 @@ Image in NIfTI format describing the cluster map computed by FSL considering a t
  - attr(*, "pixunits")= chr [1:2] "mm" "s"
  - attr(*, ".nifti_image_ptr")=<externalptr>
 }
-
+\details{
+The cluster map from Single-Group Average (One-Sample T-Test) computed by FSL using threshold equals 4.
+}
 \examples{
 data(Auditory_clusterTH4)
 ## maybe str(Auditory_clusterTH4) ; plot(Auditory_clusterTH4) ...
