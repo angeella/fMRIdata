@@ -7,6 +7,7 @@
 #' Angela Andreella \email{angela.andreella@unipd.it},
 #'
 #' @docType package
+#' @references Please see <https://openneuro.org/>
 #' @name fMRIdata
 #' @exportPattern ^[[:alpha:]]+
 #' @examples

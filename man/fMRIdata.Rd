@@ -10,6 +10,9 @@ This package is meant to serve as a data collection tool for fMRI data.
 \examples{
 # Please see the datasets
 }
+\references{
+Please see <https://openneuro.org/>
+}
 \author{
-Angela Andreella \email{angela.andreella@phd.unipd.it},
+Angela Andreella \email{angela.andreella@unipd.it},
 }

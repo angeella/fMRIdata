@@ -14,7 +14,7 @@ This package provides a collection of preprocessed fMRI datasets from [OpenNEURO
  3. [Word Object data](https://openneuro.org/datasets/ds000107/versions/00001);
  4. [Food data](https://openneuro.org/datasets/ds000157/versions/00001);
  
- In the folder [data-raw](https://github.com/angeella/fMRIdata/tree/master/data-raw), you can find also several pre-processed fMRI datasets:
+ In the folder [data-raw](https://github.com/angeella/fMRIdata/tree/master/data-raw) and [inst/extdata](https://github.com/angeella/fMRIdata/tree/master/inst/extdata), you can find also several pre-processed fMRI datasets:
  
  1. [Eklund data](https://github.com/wanderine/ParametricMultisubjectfMRI);
  2. [Rhyme data](https://openneuro.org/datasets/ds000003/versions/1.0.0);
@@ -30,3 +30,40 @@ You can install the released version of fMRIdata with:
 devtools::install_github("angeella/fMRIdata")
 ```
 
+## Example
+
+If you want to load the list of copes from the Auditory data:
+
+```{r}
+Auditory_copes <- list()
+sub_ids <- c(sapply(c(c(1:120,198:217)),function(x) ifelse(x<10,paste0("00",x), ifelse(x<100 & x>9,paste0(0,x), paste0(x)))), sapply(c(198:217), function(x)paste0(x)))
+
+for (sid in 1:length(sub_ids)) {
+  Auditory_copes[[sid]] <- RNifti::readNifti(system.file("extdata/AuditoryData/", paste0("sub-", sub_ids[sid] , ".nii.gz"),  package="fMRIdata"))
+}
+```
+The package provides some maps in rda format:
+
+1. The list of copes (only 20 subjects):
+
+```{r}
+data("Auditory_copes")
+```
+
+2. The cluster map using a threshold equals $3.2$:
+
+```{r}
+data("Auditory_clusterTH3_2")
+```
+or using a threshold equals $4$:
+
+```{r}
+data("Auditory_clusterTH4")
+```
+3. The p-values and t-statistics maps:
+
+```{r}
+data("Auditory_Pmap")
+data("Auditory_Statmap")
+```
+Please check the correct name file for the other datasets.
